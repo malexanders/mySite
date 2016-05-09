@@ -1,11 +1,8 @@
 .centered-navigation {
-  ///////////////////////////////////////////////////////////////////////////////////
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
-  $large-screen: em(860) !default;
+  $large-screen: 53.75em !default;
   $base-font-color: $dark-gray !default;
-  //////////////////////////////////////////////////////////////////////////////////
-
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
   $centered-navigation-background: white;
@@ -24,7 +21,8 @@
   width: 100%;
   z-index: 9999;
 
-  // Mobile view
+
+// Mobile view
 
   .mobile-logo {
     display: inline;
@@ -34,12 +32,12 @@
 
     img {
       max-height: $centered-navigation-height;
-      opacity: .6;
-      padding: .8em 0;
+      opacity: 0.6;
+      padding: 0.8em 0;
     }
 
     @include media($horizontal-bar-mode) {
-      display: none;
+    //   display: none;
     }
   }
 
@@ -47,7 +45,6 @@
     color: $centered-navigation-color;
     display: block;
     float: right;
-    font-weight: 700;
     line-height: $centered-navigation-height;
     margin: 0;
     padding-right: $centered-navigation-submenu-padding;
@@ -64,7 +61,8 @@
     }
   }
 
-  // Nav menu
+
+// Nav menu
 
   .centered-navigation-wrapper {
     @include outer-container;
@@ -74,12 +72,13 @@
   }
 
   ul.centered-navigation-menu {
-    -webkit-transform-style: preserve-3d; // stop webkit flicker
-    clear: both;
+    // clear: both;
     display: none;
     margin: 0 auto;
     overflow: visible;
     padding: 0;
+    -webkit-transform-style: preserve-3d;
+// stop webkit flicker
     width: 100%;
     z-index: 99999;
 
@@ -93,7 +92,8 @@
     }
   }
 
-  // The nav items
+
+// The nav items
 
   .nav-link:first-child {
     @include media($horizontal-bar-mode) {
@@ -138,7 +138,7 @@
     display: none;
     line-height: 0;
 
-    @include media($large-screen) {
+    @include media($horizontal-bar-mode) {
       display: inline;
     }
   }
@@ -149,7 +149,8 @@
     opacity: 0.6;
   }
 
-  // Sub menus
+
+// Sub menus
 
   li.more.nav-link {
     padding-right: 0;
@@ -170,7 +171,7 @@
       padding-right: 0.6em;
     }
 
-    > a:after {
+    > a::after {
       @include position(absolute, auto -0.4em auto auto);
       color: $centered-navigation-color;
       content: "\25BE";
@@ -193,7 +194,7 @@
         margin-right: $centered-navigation-submenu-padding;
       }
 
-      &:after {
+      &::after {
         content: "›";
         font-size: 1.2em;
         position: absolute;
@@ -222,9 +223,16 @@
       top: 1.5em;
     }
 
-    .submenu {
+    .submenu.fly-out-right {
       @include media($horizontal-bar-mode) {
         left: $centered-navigation-submenu-width - 0.2em;
+        top: 0;
+      }
+    }
+
+    .submenu.fly-out-left {
+      @include media($horizontal-bar-mode) {
+        left: -$centered-navigation-submenu-width + 0.2em;
         top: 0;
       }
     }
@@ -244,7 +252,7 @@
         &:last-child > a {
           border-bottom-left-radius: $base-border-radius;
           border-bottom-right-radius: $base-border-radius;
-          padding-bottom: .7em;
+          padding-bottom: 0.7em;
         }
       }
 
