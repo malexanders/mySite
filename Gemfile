@@ -6,7 +6,9 @@ gem 'rails', '4.2.5.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
+
+# gem 'sassc-rails'
 
 
 # Use Uglifier as compressor for JavaScript assets
@@ -34,20 +36,28 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'bourbon'
+# gem 'bourbon', ''
+#
+# gem 'neat'
+# #
+# gem 'bitters', '~> 1.3', '>= 1.3.1'
+# #
+# gem 'refills'
 
-gem 'neat'
-#
-gem 'bitters'
-#
-gem 'refills'
+# HTML5/CSS Framework
+gem 'bourbon', '4.2.6'
+gem 'neat', '1.7.4'
+gem 'bitters', '1.2.0'
+gem 'refills', '0.1.0'
+
+
 
 gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem "rspec-rails", "~> 2.12.2"
+  gem "rspec-rails"
 	gem "factory_girl_rails", "~> 4.0"
 end
 
