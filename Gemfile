@@ -34,13 +34,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'bourbon', '~> 4.2', '>= 4.2.7'
+gem 'bourbon'
 
-gem 'neat', '~> 1.7', '>= 1.7.4'
+gem 'neat'
 #
-gem 'bitters', '~> 1.2'
+gem 'bitters'
 #
-gem 'refills', '~> 0.1.0'
+gem 'refills'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

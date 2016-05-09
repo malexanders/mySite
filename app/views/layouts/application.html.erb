@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="appWrap">
 
-<%= yield %>
+		<%= render 'refills/centered_navigation' %>
+		<%= yield %>
+
+	</div>
 
 </body>
 </html>
