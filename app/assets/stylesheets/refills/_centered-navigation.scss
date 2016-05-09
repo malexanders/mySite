@@ -8,7 +8,7 @@
 
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
-  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-background: white;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
   $centered-navigation-height: 60px;
@@ -89,7 +89,7 @@
 
     @include media ($horizontal-bar-mode) {
       display: block;
-      text-align: center;
+      text-align: right;
     }
   }
 
