@@ -23,7 +23,6 @@ input {
 
 }
 
-
 .contact-bar {
 	overflow: auto;
 	background: yellowgreen;
@@ -36,6 +35,7 @@ input {
 
 	.contact-text {
 		@include span-columns(5);
+		
 		height:100%;
 		font-size: 23px;
     	font-family: 'Source Sans Pro';

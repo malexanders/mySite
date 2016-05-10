@@ -2,6 +2,7 @@
   @include display(flex);
   @include flex-wrap(wrap);
   @include justify-content(space-between);
+  margin-top: $base-vertical-div-margin-top;
 }
 
 .card {
@@ -69,15 +70,15 @@
       margin: 0 0 ($base-spacing / 2);
     }
   }
-  
+
   &:focus,
   &:hover {
     background-color: $card-hover-background;
-    
+
     .card-image img {
       background: $card-image-hover-background;
     }
-  
+
     .card-header {
       background-color: $card-hover-background;
     }
