@@ -1,0 +1,24 @@
+.contact-bar {
+	overflow: auto;
+	background: darkorange;
+
+	.container {
+		@include outer-container;
+		width: 80%;
+	    margin: auto;
+	}
+
+	.contact-text {
+		@include span-columns(5);
+		height:100%;
+		font-size: 23px;
+    	font-family: 'Source Sans Pro';
+		padding: 21px 0px 23px 0px;
+			p {
+				margin: 0;
+			}
+	}
+
+
+
+}
