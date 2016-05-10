@@ -71,6 +71,14 @@
     z-index: 999;
   }
 
+  h1{
+	  line-height: $centered-navigation-height;
+	  max-height: $centered-navigation-height;
+	  display: inline;
+	  float: left;
+
+  }
+
   ul.centered-navigation-menu {
     clear: both;
     display: none;

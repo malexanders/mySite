@@ -1,3 +1,6 @@
+Site Reference:
+https://industrialagency.ca/jobs/junior-web-developer
+
 Design proportions and Relative Values:
 * percentages(can't use for everything)
 	* widths/heights
