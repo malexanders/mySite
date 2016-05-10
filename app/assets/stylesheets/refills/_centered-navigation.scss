@@ -8,7 +8,7 @@
   $centered-navigation-background: white;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 60px;
+  $centered-navigation-height: 80px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
@@ -76,7 +76,9 @@
 	  max-height: $centered-navigation-height;
 	  display: inline;
 	  float: left;
-
+	  margin: 0;
+	  padding-left: 2em;
+	  font-size: 1.3em;
   }
 
   ul.centered-navigation-menu {
