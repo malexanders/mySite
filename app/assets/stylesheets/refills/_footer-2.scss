@@ -1,28 +1,28 @@
 // Uncomment this for a sticky footer.
-//
-// .wrapper-for-content-outside-of-footer {
-//   min-height: 100%;
-//   height: auto !important;
-//   height: 100%;
-//   margin: 0 auto -4em;
-// }
 
-// html, body {
-//  height: 100%;
-// }
+.wrapper-for-content-outside-of-footer {
+  min-height: 87vh;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
 
-// .wrapper-for-content-outside-of-footer:after {
-//   content: "";
-//   display: block;
-// }
+html, body {
+ height: 100%;
+}
 
-// .footer-2, .wrapper-for-content-outside-of-footer:after {
-//   height: 17em;
+.wrapper-for-content-outside-of-footer:after {
+  content: "";
+  display: block;
+}
 
-//   @include media($large-screen) {
-//     height: 4em;
-//   }
-// }
+.footer-2, .wrapper-for-content-outside-of-footer:after {
+  height: 17em;
+
+  @include media($large-screen) {
+    height: 4em;
+  }
+}
 
 .footer-2 {
   ///////////////////////////////////////////////////////////////////////////////////
@@ -30,7 +30,7 @@
   $base-accent-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  
+
   ul {
     margin: 0;
     padding: 0;
@@ -68,11 +68,11 @@
 
   .footer-logo img {
     height: 1.6em;
-  } 
+  }
 
   ul {
     margin-bottom: 1em;
-    
+
     @include media($large-screen) {
       float: left;
       line-height: 1.8em;
