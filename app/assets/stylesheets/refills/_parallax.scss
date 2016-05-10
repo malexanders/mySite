@@ -11,10 +11,32 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-static-content {
-  color: #9A9A8A;
-  padding: 8em 0;
-  position: relative;
-  z-index: 9;
+	color: #9A9A8A;
+	padding: 8em 0;
+	position: relative;
+	z-index: 9;
+	width: 50%;
+	margin: auto;
+	height: -56%;
+	width: 66%;
+
+}
+
+.parallax-static-content-inner{
+	height: 9rem;
+	border: 2px solid;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 50%;
+	b {
+		position: relative;
+    	top: 30px;
+		font-size: 3rem;
+	}
 }
 
 .parallax-background {
