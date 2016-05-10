@@ -7,13 +7,24 @@
 				Sign up here for the latest studio news, event and retreat promotions, and much more!
 			</p>
 		</div>
-		<div class="contact-form">
-			<input type="text" name="name" placeholder="FULLNAME">
-			<!-- <label for="name">FULL NAME</label> -->
-
-			<input type="text" name="email" placeholder="EMAIL">
-			<!-- <label for="email">EMAIL</label> -->
-		</div>
+		<form class="enter-contact-form" action="index.html" method="post">
+			<div class="contact-form">
+				<ul class="contact-input-list">
+					<li class="contact-input-name">
+						<input type="text" name="name" placeholder="FULLNAME">
+						<!-- <label for="name">FULL NAME</label> -->
+					</li>
+					<li class="contact-input-email">
+						<input type="text" name="email" placeholder="EMAIL">
+						<!-- <label for="email">EMAIL</label> -->
+					</li>
+				</ul>
+				<!-- <button type="button" name="button">Submit</button> -->
+				<div class="contact-form-footer">
+					<input type="submit" value="Submit">
+				</div>
+			</div>
+		</form>
 	</div>
 
 </div>
