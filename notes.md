@@ -88,3 +88,11 @@ SASS and CSS
 * CSS a-z review
 
 what does the clear parameter do?
+
+# Ecommerce
+* https://github.com/tryshoppe/shoppe
+
+# Fanciness
+
+http://kenwheeler.github.io/slick/
+* amazing for all types of sliders
