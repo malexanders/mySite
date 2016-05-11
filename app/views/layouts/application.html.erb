@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>MySite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<head>
+		<title>MySite</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
 
-<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-
-</head>
-<body>
-	<!-- <div class="appWrap"> -->
-
-		<%= render 'refills/centered_navigation' %>
-		<div class="wrapper-for-content-outside-of-footer">
-		   <!-- Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer -->
-			<%= yield %>
-		</div>
-		<%= render '/refills/footer_2' %>
+		<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<!-- Add the slick-theme.css if you want default styling -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 
 
-	<!-- </div> -->
+	</head>
+	<body>
+		<!-- <div class="appWrap"> -->
 
-</body>
+			<%= render 'refills/centered_navigation' %>
+			<div class="wrapper-for-content-outside-of-footer">
+				<!-- Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer -->
+				<%= yield %>
+			</div>
+			<%= render '/refills/footer_2' %>
+
+		<!-- </div> -->
+
+	</body>
+
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js">
+		if($('.product-slider').length){
+			if(window.location.pathname === "/music"){
+				$(document).on('ready', function(){
+					alert("product-slider exists");
+					MyGlobal.slickInit();
+				})
+			}
+		}
+	</script> -->
 </html>
