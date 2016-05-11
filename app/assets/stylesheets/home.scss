@@ -56,9 +56,22 @@ input {
 
 			li{
 				@include span-columns(2 of 4);
+				@include sharp-box-border();
 				display: inline-block;
 				margin-right: 3.42%;
+
+				// Removes margin from the two subscribe inputs
+				// I did this because I had trouble using classes
+				#subscribe-input-name {
+					margin-bottom: 0;
+				}
+
+				#subscribe-input-email {
+					margin-bottom: 0;
+				}
+
 			}
+
 		}
 	}
 

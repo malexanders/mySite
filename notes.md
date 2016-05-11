@@ -63,6 +63,9 @@ studying/performing/teaching classical music, my brain is uniquely geared for ef
 ## Blog
 * for now just document what you are learning!
 
+Ref: Medium.com
+* nice layout for blog place holders
+
 Blog Ideas:
 * Getting started with React
 * Transitioning to ES6
