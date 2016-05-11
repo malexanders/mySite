@@ -74,11 +74,14 @@
   h1{
 	  line-height: $centered-navigation-height;
 	  max-height: $centered-navigation-height;
-	  display: inline;
-	  float: left;
-	  margin: 0;
-	  padding-left: 2em;
-	  font-size: 1.3em;
+		display: inline;
+		float: left;
+		margin: 0;
+		padding-left: 2em;
+		font-size: 1.3em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 1.6rem;
+		font-weight: 600;
   }
 
   ul.centered-navigation-menu {

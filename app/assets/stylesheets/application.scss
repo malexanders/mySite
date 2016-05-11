@@ -10,12 +10,13 @@
 @import "refills/type-system-geometric";
 @import "refills/footer-2";
 @import "refills/fade-in";
+@import "blog_simple";
 @import "home";
 
 .appWrap {
 	width: 80%;
 	margin: auto;
-	margin-top: $base-vertical-div-margin-top;
+	// margin-top: $base-vertical-div-margin-top;
 }
 
 .spacer {
