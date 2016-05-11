@@ -1,0 +1,48 @@
+.slider-container {
+    position: relative;
+
+	.next.slick-arrow {
+		font-size: 5rem;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		/* right: 10%; */
+		right: 6%;
+		display: block;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		/* color: transparent; */
+		border: none;
+		outline: none;
+		/* background: transparent; */
+		z-index: 100;
+	}
+
+	.prev.slick-arrow {
+		font-size: 5rem;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		/* right: 10%; */
+		left: 5%;
+		display: block;
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		cursor: pointer;
+		/* color: transparent; */
+		border: none;
+		outline: none;
+		/* background: transparent; */
+		z-index: 100;
+	}
+	
+}

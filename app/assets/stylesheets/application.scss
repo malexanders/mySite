@@ -12,6 +12,7 @@
 @import "refills/type-system-geometric";
 @import "refills/footer-2";
 @import "refills/fade-in";
+@import "ecommerce";
 
 @import "blog_simple";
 @import "home";
@@ -24,4 +25,17 @@
 
 .spacer {
 
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev:before, .slick-next:before {
+   color: #000;
 }

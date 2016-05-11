@@ -96,3 +96,7 @@ what does the clear parameter do?
 
 http://kenwheeler.github.io/slick/
 * amazing for all types of sliders
+
+# Questions
+* Is it best to continue using slick.js / css from the cdn?
+	* For now I am writting custom css to override the vendor slick.css
