@@ -1,25 +1,17 @@
 <header class="centered-navigation" role="banner">
-  <div class="centered-navigation-wrapper">
-    <a href="javascript:void(0)" class="mobile-logo">
-      <img src="http://1.bp.blogspot.com/-KyA3ApH1TBA/UIbC9QEvswI/AAAAAAAAAM8/e-kCUzyfJ2Y/s1600/blume.png" alt="Logo image">
-    </a>
-	<h1 class="nav-title">Matthew Alexander Smith</h1>
+	<div class="centered-navigation-wrapper">
 
-    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-				<!-- <li class="nav-link logo">
-					<a href="<%= root_path %>" class="logo">
-						<img src="http://1.bp.blogspot.com/-KyA3ApH1TBA/UIbC9QEvswI/AAAAAAAAAM8/e-kCUzyfJ2Y/s1600/blume.png" alt="Logo image">
-					</a>
-				</li> -->
+		<a href="" class="mobile-logo"><%= image_tag("http://1.bp.blogspot.com/-KyA3ApH1TBA/UIbC9QEvswI/AAAAAAAAAM8/e-kCUzyfJ2Y/s1600/blume.png", alt: 'Truthometer') %></a>
 
-        <li class="nav-link"><%= link_to "Portfolio", portfolio_path %></li>
-        <li class="nav-link"><%= link_to "Blog", blog_path %></li>
-        <li class="nav-link"><%= link_to "Music", music_path %></li>
-        <li class="nav-link"><%= link_to "Contact", contact_path %></li>
-
-      </ul>
-    </nav>
-  </div>
+		<h1 class="nav-title">Matthew Alexander Smith</h1>
+		<a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+		<nav role="navigation">
+			<ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+				<li class="nav-link"><%= link_to "Portfolio", portfolio_path %></li>
+				<li class="nav-link"><%= link_to "Blog", blog_path %></li>
+				<li class="nav-link"><%= link_to "Music", music_path %></li>
+				<li class="nav-link"><%= link_to "Contact", contact_path %></li>
+			</ul>
+		</nav>
+	</div>
 </header>
