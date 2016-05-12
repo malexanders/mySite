@@ -33,6 +33,11 @@
     font-size: 2em;
     color: white;
     opacity: 0.4;
+	h1 {
+		@include media($xlarge-screen) {
+			font-size: 1.3em;
+		}
+	}
 
     p {
       color: white;

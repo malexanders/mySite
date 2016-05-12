@@ -2,6 +2,8 @@
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
   $large-screen: 53.75em !default;
+  $large-screen-break: 1200px;
+  $desktop-break: 960;
   $base-font-color: $dark-gray !default;
   $centered-navigation-padding: 1em;
   $centered-navigation-logo-height: 2em;
@@ -15,11 +17,13 @@
   $centered-navigation-item-nudge: 2.2em;
   $horizontal-bar-mode: $large-screen;
 
+
   background-color: $centered-navigation-background;
   border-bottom: 1px solid darken($centered-navigation-background, 6%);
   min-height: $centered-navigation-height;
   width: 100%;
   z-index: 9999;
+
 
 
 // Mobile view
@@ -37,9 +41,24 @@
 	  z-index: 9999;
     }
 
+	.nav-image-2{
+		display: none;
+	}
+	@include media($xlarge-screen) {
+	  .nav-image-1{
+		  display: none;
+	  }
+
+	  .nav-image-2{
+		  display: block;
+	  }
+	}
+
+
     @include media($horizontal-bar-mode) {
     //   display: none;
     }
+
   }
 
   .centered-navigation-mobile-menu {
@@ -70,6 +89,9 @@
     @include clearfix;
     position: relative;
     // z-index: 999;
+	@include media($xlarge-screen) {
+  	  width: 85%;
+    }
   }
 
   h1{
