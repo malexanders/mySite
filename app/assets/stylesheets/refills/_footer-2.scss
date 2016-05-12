@@ -17,7 +17,7 @@ html, body {
 }
 
 .footer-2, .wrapper-for-content-outside-of-footer:after {
-  height: 17em;
+  height: 3em;
 
   @include media($large-screen) {
     height: 4em;

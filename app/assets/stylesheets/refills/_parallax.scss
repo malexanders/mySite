@@ -8,7 +8,8 @@ $parallax-background-height: $parallax-window-height * 2;
   text-align: center;
   width: 100%;
   margin-top: $base-vertical-div-margin-top;
-  height: 23.5rem;
+  height: 17.5rem;
+
 }
 
 .parallax-static-content {
@@ -20,6 +21,7 @@ $parallax-background-height: $parallax-window-height * 2;
 	margin: auto;
 	height: -56%;
 	width: 66%;
+	bottom: 2.8em;
 
 
 }
