@@ -10,7 +10,7 @@
   $centered-navigation-background: white;
   $centered-navigation-color: transparentize($base-font-color, 0.3);
   $centered-navigation-color-hover: $base-font-color;
-  $centered-navigation-height: 100px;
+  $centered-navigation-height: 75px;
   $centered-navigation-item-padding: 1em;
   $centered-navigation-submenu-padding: 1em;
   $centered-navigation-submenu-width: 12em;
@@ -55,16 +55,19 @@
 		display: none;
 	}
 
+	@include media($iphone-5){
+		  .nav-image-1{
+			  display: none;
+		  }
 
-	@include media($xlarge-screen) {
-	  .nav-image-1{
-		  display: none;
-	  }
-
-	  .nav-image-2{
-		  display: block;
-	  }
+		  .nav-image-2{
+			  display: block;
+		  }
 	}
+
+
+	// @include media($xlarge-screen) {
+	// }
 
 	@include media($large-screen) {
 		.nav-image-3{
@@ -74,6 +77,7 @@
 		.nav-image-2 {
 			display: none;
 		}
+
 
 	}
 
@@ -94,6 +98,10 @@
     padding-right: $centered-navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
+	color: rgba(51, 51, 51, 0.7);
+	padding-right: 1em;
+	position: relative;
+	top: 0.1em;
 
     @include media ($horizontal-bar-mode) {
       display: none;
@@ -113,23 +121,51 @@
     @include clearfix;
     position: relative;
     // z-index: 999;
-	@include media($xlarge-screen) {
-  	  width: 85%;
-    }
-  }
+	// @include media($xlarge-screen) {
+ //  	  width: 85%;
+    // }
+		h1{
+			 line-height: $centered-navigation-height;
+			 max-height: $centered-navigation-height;
+			display: inline;
+			float: left;
+			margin: 0;
+			padding-left: 2em;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-size: 1.3rem;
+			font-weight: 600;
+		}
 
-  h1{
-	  line-height: $centered-navigation-height;
-	  max-height: $centered-navigation-height;
-		display: inline;
-		float: left;
-		margin: 0;
-		padding-left: 2em;
-		font-size: 1.3em;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 1.6rem;
-		font-weight: 600;
-  }
+		// Nav-title breaks
+		.large-title{
+			display:none;
+		}
+
+
+		@include media($iphone-5){
+			h1{
+
+			}
+		}
+	}
+
+
+
+
+
+	// large screen styles
+  // h1{
+  //  line-height: $centered-navigation-height;
+  //  max-height: $centered-navigation-height;
+  // display: inline;
+  // float: left;
+  // margin: 0;
+  // padding-left: 2em;
+  // font-size: 1.3em;
+  // font-family: 'Source Sans Pro', sans-serif;
+  // font-size: 1.6rem;
+  // font-weight: 600;
+  // }
 
   ul.centered-navigation-menu {
     clear: both;

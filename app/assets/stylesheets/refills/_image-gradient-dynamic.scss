@@ -34,9 +34,9 @@
     color: white;
     opacity: 0.4;
 	h1 {
-		@include media($xlarge-screen) {
-			font-size: 1.1em;
-		}
+		// @include media($xlarge-screen) {
+		// 	font-size: 1.1em;
+		// }
 	}
 
     p {

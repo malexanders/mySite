@@ -36,6 +36,9 @@ input {
 	.contact-text {
 		@include span-columns(5);
 
+		@include media($large-screen){
+			@include span-columns(12);
+		}
 		height:100%;
 		font-size: 23px;
     	font-family: 'Source Sans Pro';
