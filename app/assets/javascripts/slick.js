@@ -1,5 +1,5 @@
-$(document).off().on('ready turbolinks:load', function(){
-	alert("worked");
+$(document).on('ready turbolinks:load', function(){
+	// alert("worked");
 	$('.product-slider').slick({
 		dots: true,
 		arrows: true,

@@ -34,6 +34,7 @@
       max-height: $centered-navigation-height;
       opacity: 0.6;
       padding: 0.8em 0;
+	  z-index: 9999;
     }
 
     @include media($horizontal-bar-mode) {
@@ -68,7 +69,7 @@
     @include outer-container;
     @include clearfix;
     position: relative;
-    z-index: 999;
+    // z-index: 999;
   }
 
   h1{
@@ -93,7 +94,7 @@
     -webkit-transform-style: preserve-3d;
 // stop webkit flicker
     width: 100%;
-    z-index: 99999;
+    // z-index: 99999;
 
     &.show {
       display: block;
@@ -103,6 +104,8 @@
       display: block;
       text-align: right;
 	  clear: none;
+	  width: auto;
+	  float: right;
     }
   }
 
@@ -123,7 +126,7 @@
     padding-right: $centered-navigation-submenu-padding;
     text-align: right;
     width: 100%;
-    z-index: 9999;
+    // z-index: 9999;
 
     a {
       color: $centered-navigation-color;
