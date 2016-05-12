@@ -32,8 +32,11 @@
     z-index: 999;
     font-size: 2em;
     color: white;
-    opacity: 0.4;
+	opacity: 0.8;
+    width: 50%;
+
 	h1 {
+		font-size: 0.5em;
 		// @include media($xlarge-screen) {
 		// 	font-size: 1.1em;
 		// }

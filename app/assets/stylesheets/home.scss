@@ -29,16 +29,18 @@ input {
 
 	.container {
 		@include outer-container;
-		width: 80%;
+		width: 93%;
 	    margin: auto;
 	}
 
 	.contact-text {
-		@include span-columns(5);
+		@include span-columns(12);
+		text-align: center;
 
-		@include media($large-screen){
-			@include span-columns(12);
-		}
+
+		// @include media($large-screen){
+		// 	@include span-columns(12);
+		// }
 		height:100%;
 		font-size: 23px;
     	font-family: 'Source Sans Pro';
@@ -49,18 +51,19 @@ input {
 	}
 
 	.contact-form{
-		@include span-columns(7);
-		padding-top: 2em;
+		@include span-columns(12);
+		// padding-top: 0em;
 
 		.contact-input-list {
-			@include span-columns(4 of 7);
+			@include span-columns(12);
 			margin: 0;
 			text-align: center;
 
 			li{
-				@include span-columns(2 of 4);
+				@include span-columns(12);
 				@include sharp-box-border();
-				display: inline-block;
+				margin-bottom: 1em;
+
 				margin-right: 3.42%;
 
 				// Removes margin from the two subscribe inputs
@@ -79,8 +82,16 @@ input {
 	}
 
 	.contact-form-footer{
-		@include span-columns (3 of 7);
+		@include span-columns (12);
+		margin: auto;
 		@include omega();
+
+		input{
+			width: 61.8%;
+			display: block;
+			margin: auto;
+			margin-bottom: 1em;
+		}
 	}
 
 }
