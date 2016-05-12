@@ -36,7 +36,7 @@
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
-  position: relative;
+  z-index: 9999;
 
   .card-image {
     overflow: hidden;

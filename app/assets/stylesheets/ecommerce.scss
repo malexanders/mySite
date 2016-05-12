@@ -45,4 +45,17 @@
 		z-index: 100;
 	}
 
+	.product-slider{
+			.item-1 img {
+				height: 100px;
+				width: 100px;
+				object-fit: contain;
+			    // background: url('http://www.3dhdwallpapers.com/image.php?width=480&height=332&cropratio=2:1&image=/wallpapers/17112015/apple-blue-background-wallpaper-desktop.jpg') no-repeat center center fixed;
+			    // -webkit-background-size: cover;
+			    // -moz-background-size: cover;
+			    // -o-background-size: cover;
+			    // background-size: cover;
+			}
+		}
+
 }
