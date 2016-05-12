@@ -44,7 +44,10 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  background: url("/bowls_zen.jpg") repeat;
+  // background: url("/bowls_zen.jpg") repeat;
+  background: url("http://cdn.wall-pix.net/albums/art-abstract/00003878.jpg") repeat;
+  // background: url("/st_lawrence.jpg") repeat;
+
   background-position: top;
   background-size: cover;
   background-color: beige;
