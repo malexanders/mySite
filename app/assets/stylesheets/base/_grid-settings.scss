@@ -12,7 +12,9 @@ $large-phone: 480px;
 $medium-screen: 600px;
 
 $ipad: 768px;
-$large-screen: 900px;
+$large-screen: 960px;
+
+$xlarge-screen: new-breakpoint(max-width 960px 8);
 $xlarge-screen: new-breakpoint(max-width 1200px 8) ;
 
 

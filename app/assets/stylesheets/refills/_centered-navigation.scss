@@ -1,7 +1,7 @@
 .centered-navigation {
   $base-border-radius: 3px !default;
   $dark-gray: #333 !default;
-  $large-screen: 53.75em !default;
+  // $large-screen: 53.75em !default;
   $large-screen-break: 1200px;
   $desktop-break: 960;
   $base-font-color: $dark-gray !default;
@@ -41,9 +41,21 @@
 	  z-index: 9999;
     }
 
+
+	// Nav Bar Image Swap
+	.nav-image-1{
+		display: block;
+	}
+
 	.nav-image-2{
 		display: none;
 	}
+
+	.nav-image-3{
+		display: none;
+	}
+
+
 	@include media($xlarge-screen) {
 	  .nav-image-1{
 		  display: none;
@@ -53,6 +65,18 @@
 		  display: block;
 	  }
 	}
+
+	@include media($large-screen) {
+		.nav-image-3{
+			display: block;
+		}
+
+		.nav-image-2 {
+			display: none;
+		}
+
+	}
+
 
 
     @include media($horizontal-bar-mode) {
