@@ -1,7 +1,4 @@
-// $(document).on('ready turbolinks:load', function(){
-// });
-
-MyGlobal.slickInit = function(){
+$(document).off().on('ready turbolinks:load', function(){
 	alert("worked");
 	$('.product-slider').slick({
 		dots: true,
@@ -9,4 +6,4 @@ MyGlobal.slickInit = function(){
 		prevArrow: $('.prev'),
 		nextArrow: $('.next')
 	});
-}
+});

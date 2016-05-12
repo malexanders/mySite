@@ -13,10 +13,11 @@
 						<img src="http://1.bp.blogspot.com/-KyA3ApH1TBA/UIbC9QEvswI/AAAAAAAAAM8/e-kCUzyfJ2Y/s1600/blume.png" alt="Logo image">
 					</a>
 				</li> -->
-        <li class="nav-link"><a href="<%= portfolio_path %>">Portfolio</a></li>
-        <li class="nav-link"><a href="<%= blog_path %>">Blog</a></li>
-        <li class="nav-link"><a href="<%= music_path %>">Music</a></li>
-        <li class="nav-link"><a href="<%= contact_path %>">Contact</a></li>
+
+        <li class="nav-link"><%= link_to "Portfolio", portfolio_path %></li>
+        <li class="nav-link"><%= link_to "Blog", blog_path %></li>
+        <li class="nav-link"><%= link_to "Music", music_path %></li>
+        <li class="nav-link"><%= link_to "Contact", contact_path %></li>
 
       </ul>
     </nav>
