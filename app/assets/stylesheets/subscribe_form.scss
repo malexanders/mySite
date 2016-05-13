@@ -48,6 +48,7 @@ input {
 			p {
 				margin: 0;
 			}
+
 	}
 
 	.contact-form{
@@ -56,6 +57,9 @@ input {
 
 		.contact-input-list {
 			@include span-columns(12);
+			@include media($ipad){
+				@include span-columns(8);
+			}
 			margin: 0;
 			text-align: center;
 
@@ -75,7 +79,9 @@ input {
 				#subscribe-input-email {
 					margin-bottom: 0;
 				}
-
+				@include media($ipad){
+					@include span-columns(4 of 8);
+				}
 			}
 
 		}
@@ -91,6 +97,14 @@ input {
 			display: block;
 			margin: auto;
 			margin-bottom: 1em;
+		}
+
+		@include media($ipad){
+			@include span-columns(4);
+			@include omega();
+			input{
+				width: 100%;
+			}
 		}
 	}
 

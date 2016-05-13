@@ -8,6 +8,11 @@
 
 // Neat Breakpoints
 $iphone-5: new-breakpoint(min-width 321px);
+$iphone-6: new-breakpoint(min-width 374px);
+$iphone-6-plus: new-breakpoint(min-width 413px);
+$ipad:  new-breakpoint(min-width 760);
+
+
 $large-phone: 480px;
 $medium-screen: 600px;
 

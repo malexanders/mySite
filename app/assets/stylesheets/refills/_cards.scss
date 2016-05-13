@@ -52,6 +52,33 @@
       border-top-right-radius: $base-border-radius;
       width: 100%;
     }
+
+	// Adjusting image placement at different screen sizes.
+	// Must be a better way to do this...
+	#card-image-1{
+		@include media($iphone-6){
+			position: relative;
+			bottom: 0.5em;
+		}
+
+		@include media($iphone-6-plus){
+			position: relative;
+			bottom: 1.4em;
+		}
+	}
+
+	#card-image-2{
+		@include media($iphone-6){
+			position: relative;
+			bottom: 0.5em;
+		}
+
+		@include media($iphone-6-plus){
+			position: relative;
+			bottom: 0.6em;
+		}
+	}
+
   }
 
   .card-header {
