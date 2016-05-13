@@ -67,7 +67,7 @@
 	// @include media($xlarge-screen) {
 	// }
 
-	@include media($large-screen) {
+	@include media($ipad) {
 		.nav-image-3{
 			display: block;
 		}
