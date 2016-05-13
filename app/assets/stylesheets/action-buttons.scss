@@ -1,35 +1,38 @@
 // Styles for Action Buttons on Home Page
 
-.action-button-container{
-	@include outer-container;
-	margin-right: auto;
-    margin-top: 2em;
+.button-container{
+	border-bottom: 1px solid;
+	padding-left: 1.5em;
+    padding-right: 1.5em;
 
-	.action-button{
-		@include span-columns(8);
-		// @include omega(1n);
-		float: none;
-		border: 1px solid rgba(0, 0, 0, 0.69);
-		margin-bottom: 0.7em;
-		height: 2.3em;
-		margin: auto;
-		margin-bottom: 1em;
-		font-family: 'Source Sans Pro', sans-serif;
-		&:last-child{
+	.action-button-container{
+		@include outer-container;
+		margin-right: auto;
+	    margin-top: 2em;
+		padding-bottom: 2em;
+
+		@include media($ipad){
+			// width:60%;
+			width:76%;
+
+		}
+
+		.action-button{
+			@include span-columns(8);
+			@include media($iphone-6-plus){
+				@include span-columns(4 of 8);
+			};
+			// @include omega(1n);
+			float: none;
+			border: 1px solid rgba(0, 0, 0, 0.69);
+			margin-bottom: 0.7em;
+			height: 2.3em;
 			margin: auto;
+			margin-bottom: 1em;
+			font-family: 'Source Sans Pro', sans-serif;
+			&:last-child{
+				margin: auto;
+			}
 		}
 	}
-
-	// .action-button.modal-trigger{
-	// 	@include span-columns(8);
-	// 	// @include omega(1n);
-	// 	float: none;
-	// 	border: 1px solid rgba(0, 0, 0, 0.69);
-	// 	margin-bottom: 0.7em;
-	// 	height: 2.3em;
-	// 	margin: auto;
-	// 	margin-bottom: 1em;
-	// 	font-family: 'Source Sans Pro', sans-serif;
-	//
-	// }
 }

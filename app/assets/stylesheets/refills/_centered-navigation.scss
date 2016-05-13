@@ -228,7 +228,8 @@
 	text-align: center;
 	width: 100%;
 	/* border-bottom-style: solid; */
-	border: 1px solid rgba(0,0,0,.07);
+	// border: 1px solid rgba(0,0,0,.07);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 
     a {
       color: $centered-navigation-color;
