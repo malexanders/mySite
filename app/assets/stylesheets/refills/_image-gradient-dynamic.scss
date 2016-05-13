@@ -40,7 +40,11 @@
 		// @include media($xlarge-screen) {
 		// 	font-size: 1.1em;
 		// }
+		@include media($ipad){
+			font-size: 0.8em;	
+		}
 	}
+
 
     p {
       color: white;
