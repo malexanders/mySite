@@ -3,6 +3,9 @@
   @include flex-wrap(wrap);
   @include justify-content(space-between);
   margin-top: $base-vertical-div-margin-top;
+  a{
+	  color: black;
+  }
 }
 
 .card {
