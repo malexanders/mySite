@@ -2,11 +2,14 @@
   @include display(flex);
   @include flex-wrap(wrap);
   @include justify-content(space-between);
+  // @include outer-container;
   margin-top: $base-vertical-div-margin-top;
   a{
 	  color: black;
   }
 }
+
+
 
 .card {
   ///////////////////////////////////////////////////////////////////////////////////
@@ -40,6 +43,18 @@
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   z-index: 9999;
+
+  // This doesn't work quite right
+  // The last child short span 6 columns and float left
+  // PResently, it is spanning 12 columns.
+  @include media($ipad){
+	@include span-columns(6);
+	&:last-child{
+		max-width: 45.42%;
+		margin-right: 2.35765%;
+	}
+
+  }
 
   .card-image {
     overflow: hidden;
