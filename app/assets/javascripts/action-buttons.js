@@ -9,6 +9,7 @@ $(document).on('turbolinks:load', function(){
 			});
 		} else if (event.target.id === 'music-scroll') {
 			alert("do stuff with music");
+			$('#modal-1').prop('checked', true);
 		}
 
 	})

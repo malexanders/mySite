@@ -1,4 +1,5 @@
 // Styles for Action Buttons on Home Page
+
 .action-button-container{
 	@include outer-container;
 	margin-right: auto;
@@ -18,4 +19,17 @@
 			margin: auto;
 		}
 	}
+
+	// .action-button.modal-trigger{
+	// 	@include span-columns(8);
+	// 	// @include omega(1n);
+	// 	float: none;
+	// 	border: 1px solid rgba(0, 0, 0, 0.69);
+	// 	margin-bottom: 0.7em;
+	// 	height: 2.3em;
+	// 	margin: auto;
+	// 	margin-bottom: 1em;
+	// 	font-family: 'Source Sans Pro', sans-serif;
+	//
+	// }
 }
