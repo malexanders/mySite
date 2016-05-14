@@ -26,24 +26,22 @@ input {
 .contact-bar {
 	overflow: auto;
 	background: #fde600;
+
 	@include media($ipad){
-		height: 10em;
+		// height: 10em;
 	}
 
 	.container {
-		@include outer-container;
 		width: 93%;
 	    margin: auto;
+		@include media($large-screen){
+			@include outer-container;
+		}
 	}
 
 	.contact-text {
-		@include span-columns(12);
+		width: 100%;
 		text-align: center;
-
-
-		// @include media($large-screen){
-		// 	@include span-columns(12);
-		// }
 		height:100%;
 		font-size: 23px;
     	font-family: 'Source Sans Pro';
@@ -52,26 +50,51 @@ input {
 				margin: 0;
 			}
 
+			@include media($large-screen){
+				@include span-columns(6);
+			    padding-top: 1.8em;
+
+			}
 	}
 
-	.contact-form{
-		@include span-columns(12);
-		// padding-top: 0em;
 
-		.contact-input-list {
-			@include span-columns(12);
-			@include media($ipad){
-				@include span-columns(8);
-			}
+	.contact-form{
+		width: 100%;
+		padding-top: 0em;
+		padding-bottom: 2em;
+
+		@include media($large-screen){
+			@include span-columns(6);
+			padding-top: 2em;
+		}
+		ul.contact-input-list{
 			margin: 0;
-			text-align: center;
+			@include media($ipad){
+				@include outer-container();
+				width: 90%;
+			}
+
+			@include media($large-screen){
+				padding-top: 0.5em;
+			}
 
 			li{
-				@include span-columns(12);
+				width: 100%;
+				&:last-child{
+					display:block;
+					width: 61.8%;
+					margin: auto;
+				}
+
+				@include media($ipad){
+					@include span-columns(4);
+					@include omega(3n);
+					&:last-child{
+						@include span-columns(4);
+					}
+				}
 				@include sharp-box-border();
 				margin-bottom: 1em;
-
-				margin-right: 3.42%;
 
 				// Removes margin from the two subscribe inputs
 				// I did this because I had trouble using classes
@@ -82,33 +105,8 @@ input {
 				#subscribe-input-email {
 					margin-bottom: 0;
 				}
-				@include media($ipad){
-					@include span-columns(4 of 8);
-				}
 			}
 
 		}
 	}
-
-	.contact-form-footer{
-		@include span-columns (12);
-		margin: auto;
-		@include omega();
-
-		input{
-			width: 61.8%;
-			display: block;
-			margin: auto;
-			margin-bottom: 1em;
-		}
-
-		@include media($ipad){
-			@include span-columns(4);
-			@include omega();
-			input{
-				width: 100%;
-			}
-		}
-	}
-
 }
