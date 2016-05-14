@@ -77,6 +77,16 @@
 		}
 	}
 
+	@include media($large-screen){
+		.nav-image-4{
+			display: block;
+		}
+		.nav-image-3{
+			display: none;
+		}
+
+	}
+
 
 
     @include media($horizontal-bar-mode) {
@@ -230,6 +240,9 @@
 	/* border-bottom-style: solid; */
 	// border: 1px solid rgba(0,0,0,.07);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+	@include media($large-screen){
+		border-bottom: none;
+	}
 
     a {
       color: $centered-navigation-color;
