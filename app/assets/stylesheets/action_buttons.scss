@@ -2,10 +2,18 @@
 
 
 // Screen size less than 960px
-.button-container-small-screen{
+.button-container{
 	border-bottom: 1px solid;
 	padding-left: 1.5em;
     padding-right: 1.5em;
+	@include media($large-screen){
+		display: none;
+		// position: absolute;
+		// width: 100%;
+		// border: white;
+		// top: 66%;
+		// z-index: 99999;
+	}
 
 	.action-button-container{
 		@include outer-container;
@@ -13,10 +21,6 @@
 	    margin-top: 2em;
 		padding-bottom: 2em;
 		max-width: 500px;
-
-		@include media($large-screen){
-			display: none;
-		}
 
 
 		@include media($ipad){
@@ -49,35 +53,3 @@
 }
 
 // Styles for screen size greater than 960px
-.button-container-large-screen{
-	border-bottom: 1px solid;
-	padding-left: 1.5em;
-    padding-right: 1.5em;
-	background: transparent;
-
-	.action-button-container{
-		@include outer-container;
-		margin-right: auto;
-	    margin-top: 2em;
-		padding-bottom: 2em;
-		max-width: 500px;
-		display: none;
-		@include media($large-screen){
-			display: block;
-		}
-
-		.action-button{
-			@include span-columns(8);
-			float: none;
-			border: 1px solid rgba(0, 0, 0, 0.69);
-			margin-bottom: 0.7em;
-			height: 2.9em;
-			margin: auto;
-			margin-bottom: 1em;
-			font-family: 'Source Sans Pro', sans-serif;
-			&:last-child{
-				margin: auto;
-			}
-		}
-	}
-}
