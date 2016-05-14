@@ -2,7 +2,7 @@
 
 // Neat Overrides
 // $column: 90px;
-// $gutter: 30px;
+$gutter: 1.1em;
 // $grid-columns: 12;
 // $max-width: 1200px;
 
@@ -10,7 +10,7 @@
 $iphone-5: new-breakpoint(min-width 321px);
 $iphone-6: new-breakpoint(min-width 374px);
 $iphone-6-plus: new-breakpoint(min-width 413px);
-$ipad:  new-breakpoint(min-width 760);
+$ipad:  new-breakpoint(min-width 760px);
 $large-screen: new-breakpoint(min-width 960px);
 
 
