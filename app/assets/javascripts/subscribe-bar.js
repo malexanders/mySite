@@ -1,6 +1,9 @@
 $(document).on('turbolinks:load', function(){
 	$('#subscribe-bar').click(function(event){
 		event.preventDefault();
-		$('#subscribe-form').trigger('reset');
+		
+		if(event.target.id === 'contact-submit'){
+			$('#subscribe-form').trigger('reset');
+		}
 	})
 });
