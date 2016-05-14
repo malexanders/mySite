@@ -23,29 +23,38 @@ input {
 
 }
 
-.contact-bar {
+.action-bar {
 	overflow: auto;
-	background: #fde600;
+	background: white;
+	overflow: auto;
+	/* background: #fde600; */
+	height: 12em;
 	@include media($ipad){
-		height: 10em;
+		height: 16em;
+		padding-top: 2em;
+
 	}
 
-	.container {
+	.action-container {
 		@include outer-container;
 		width: 93%;
 	    margin: auto;
 	}
 
-	.contact-text {
+	.action-text {
 		@include span-columns(12);
 		text-align: center;
+		font-size: 1.5em;
+		@include media($ipad){
+			font-size: 2em;
+		}
 
 
 		// @include media($large-screen){
 		// 	@include span-columns(12);
 		// }
 		height:100%;
-		font-size: 23px;
+		font-size: 4em;
     	font-family: 'Source Sans Pro';
 		padding: 21px 0px 23px 0px;
 			p {
@@ -54,11 +63,11 @@ input {
 
 	}
 
-	.contact-form{
+	.action-form{
 		@include span-columns(12);
 		// padding-top: 0em;
 
-		.contact-input-list {
+		.action-input-list {
 			@include span-columns(12);
 			@include media($ipad){
 				@include span-columns(8);
@@ -90,7 +99,7 @@ input {
 		}
 	}
 
-	.contact-form-footer{
+	.action-form-footer{
 		@include span-columns (12);
 		margin: auto;
 		@include omega();
@@ -110,5 +119,13 @@ input {
 			}
 		}
 	}
+}
 
+img#projects-arrow {
+	width: 8%;
+	margin: auto;
+	display: block;
+	position: relative;
+	top: 0.2em;
+	z-index: 99999997;
 }
