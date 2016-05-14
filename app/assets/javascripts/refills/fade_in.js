@@ -13,6 +13,7 @@ $(document).on('ready turbolinks:load', function() {
 
 			if(elementTopToWindowBottom > distanceFromBottomToAppear) {
 				$(element).addClass('js-fade-element-show');
+
 			}
 			else if(elementTopToWindowBottom < 0) {
 				$(element).removeClass('js-fade-element-show');
