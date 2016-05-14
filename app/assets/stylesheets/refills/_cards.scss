@@ -72,11 +72,13 @@
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
       width: 100%;
+	  min-height: 156px;
     }
 
 	// Adjusting image placement at different screen sizes.
 	// Must be a better way to do this...
 	#card-image-1{
+		min-height: 156px;
 		@include media($iphone-6){
 			position: relative;
 			bottom: 0.5em;
@@ -84,11 +86,17 @@
 
 		@include media($iphone-6-plus){
 			position: relative;
-			bottom: 1.4em;
+			bottom: 1em;
+		}
+		@include media($large-screen){
+			position: relative;
+			// bottom: 1.3em;
+			bottom: 1.3em
 		}
 	}
 
 	#card-image-2{
+		min-height: 156px;
 		@include media($iphone-6){
 			position: relative;
 			bottom: 0.5em;
@@ -98,6 +106,9 @@
 			position: relative;
 			bottom: 0.6em;
 		}
+	}
+	#card-image-3{
+		min-height: 156px;
 	}
 
   }

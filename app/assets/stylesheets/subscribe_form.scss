@@ -9,18 +9,20 @@ input {
 	border: 0.15em solid #808080;
 	border-radius: 0.5em;
 	text-align: center;
+	// font-weight: 300;
 }
 
 ::-webkit-input-placeholder {
    color: #808080;
    text-align: center;
+   // font-weight: 300;
 
 }
 
 :-moz-placeholder {
    color: #808080;
    text-align: center;
-
+   // font-weight: 300;
 }
 
 .contact-bar {
