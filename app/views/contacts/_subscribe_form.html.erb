@@ -1,0 +1,75 @@
+<div class="contact-bar">
+	<div class="container">
+		<div class="contact-text">
+			<p>
+				Sign up here for my latest blog posts and monthly newsletter!
+			</p>
+		</div>
+
+		<%= form_for @contact,
+                  url: {action: 'create', controller: 'contacts'},
+                  html: {id: 'subscribe-form', class: "enter-contact-form"},
+                  remote: true do |f| %>
+
+      <div id="subscribe-bar" class="contact-form">
+
+        <ul class="contact-input-list">
+          <li class="contact-input-name">
+            <!--<input id="subscribe_input_name" type="text" name="name" placeholder="FULLNAME">-->
+            <%# if @contact.errors[:name].any? %>
+                <%= f.text_field :name,
+                                 id: 'subscribe_input_name',
+                                 placeholder: 'FULLNAME' %>
+
+
+
+            <%# else %>
+                <%# f.text_field :name, id: 'subscribe_input_name', placeholder: 'FULLNAME' %>
+            <%# end %>
+            <%# raw 'subscribe_errors' %>
+
+          </li>
+          <li class="contact-input-email">
+            <!--<input id="subscribe_input_email" type="text" name="email" placeholder="EMAIL">-->
+                <%= f.text_field :email,
+                                  id: 'subscribe_input_email',
+                                  placeholder: 'EMAIl',
+                                  type: 'email' %>
+
+
+          </li>
+          <li  class="contact-input-submit">
+            <input id="contact-submit" type="submit" value="Submit">
+          </li>
+        </ul>
+
+      </div>
+    <% end %>
+
+
+
+		<!--<form id="subscribe-form" class="enter-contact-form" action="index.html" method="post">-->
+			<!--<div id="subscribe-bar" class="contact-form">-->
+        <!---->
+				<!--<ul class="contact-input-list">-->
+					<!--<li class="contact-input-name">-->
+						<!--<input id="subscribe_input_name" type="text" name="name" placeholder="FULLNAME">-->
+					<!--</li>-->
+					<!--<li class="contact-input-email">-->
+						<!--<input id="subscribe_input_email" type="text" name="email" placeholder="EMAIL">-->
+					<!--</li>-->
+					<!--<li  class="contact-input-submit">-->
+						<!--<input id="contact-submit" type="submit" value="Submit">-->
+					<!--</li>-->
+				<!--</ul>-->
+
+			<!--</div>-->
+		<!--</form>-->
+
+		<!-- contact / subscriber? -->
+		<%# form_for @contact do |f| %>
+
+		<%# end %>
+
+	</div>
+</div>

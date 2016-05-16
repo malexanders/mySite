@@ -2,6 +2,10 @@
  * Center aligned placeholder text
  */
 
+.errors{
+  border: 2px solid red;
+}
+
 input {
 	box-sizing: border-box;
 	width: 100%;
@@ -9,7 +13,9 @@ input {
 	border: 0.15em solid #808080;
 	border-radius: 0.5em;
 	text-align: center;
+
 	// font-weight: 300;
+
 }
 
 ::-webkit-input-placeholder {
@@ -100,11 +106,11 @@ input {
 
 				// Removes margin from the two subscribe inputs
 				// I did this because I had trouble using classes
-				#subscribe-input-name {
+				#subscribe_input_name {
 					margin-bottom: 0;
 				}
 
-				#subscribe-input-email {
+				#subscribe_input_email {
 					margin-bottom: 0;
 				}
 			}

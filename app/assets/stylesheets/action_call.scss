@@ -88,11 +88,11 @@ input {
 
 				// Removes margin from the two subscribe inputs
 				// I did this because I had trouble using classes
-				#subscribe-input-name {
+				#subscribe_input_name {
 					margin-bottom: 0;
 				}
 
-				#subscribe-input-email {
+				#subscribe_input_email {
 					margin-bottom: 0;
 				}
 				@include media($ipad){

@@ -46,7 +46,8 @@ gem 'neat', '1.7.4'
 gem 'bitters', '1.2.0'
 gem 'refills', '0.1.0'
 
-
+# Debugging
+gem 'pry-rails'
 
 gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 

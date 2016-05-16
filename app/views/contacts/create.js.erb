@@ -1,0 +1,22 @@
+<% if @contact.errors.any? %>
+  <% @contact.errors.full_messages.each do |message| %>
+    $('#flash-messages').show();
+    $('#flash-messages').html('<%= j render 'refills/flashes' %>');
+    $('#flash-messages').delay(5000).fadeOut(400);
+  <% end %>
+
+  <% if @contact.errors[:name].any? %>
+    $('#subscribe_input_name').addClass('errors');
+    $('#subscribe_input_name').css('border', '2px solid red');
+  <% else %>
+    $('#subscribe_input_name').css('border', 'none');
+  <% end %>
+
+  <% if @contact.errors[:email].any? %>
+    $('#subscribe_input_email').addClass('errors');
+    $('#subscribe_input_email').css('border', '2px solid red');
+  <% else %>
+    $('#subscribe_input_email').css('border', 'none');
+  <% end  %>
+
+<% end %>
