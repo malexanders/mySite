@@ -11,23 +11,23 @@
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-		<!-- Add the slick-theme.css if you want default styling -->
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
 
 
 	</head>
 	<body>
 
-		<div class="appWrap">
 			<%= render 'refills/centered_navigation' %>
-		</div>
+			<div class="temp-spacer"></div>
+
 
     <div id="flash-messages">
       <%= render 'refills/flashes' %>
     </div>
 
 			<div class="wrapper-for-content-outside-of-footer">
-				<!-- Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer -->
+
 				<%= render 'refills/modal' %>
 				<%= yield %>
 			</div>
@@ -38,9 +38,7 @@
 
 
 	</body>
-
 		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>">
-
-
+    	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"> </script>
 </html>

@@ -13,6 +13,8 @@
   line-height: 0;
   position: relative;
   width: 100%;
+  
+
 
   img {
    height: auto;
@@ -41,7 +43,7 @@
 		// 	font-size: 1.1em;
 		// }
 		@include media($ipad){
-			font-size: 0.8em;	
+			font-size: 0.8em;
 		}
 	}
 

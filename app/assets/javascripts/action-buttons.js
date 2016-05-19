@@ -11,4 +11,6 @@ $(document).on('turbolinks:load', function(){
 			// $('#modal-1').attr('checked', 'checked');
 		}
 	})
+
+
 })
