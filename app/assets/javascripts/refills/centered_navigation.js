@@ -19,6 +19,7 @@ $(document).on('turbolinks:load', function() {
                 scrollTop: $('.parallax-static-content').offset().top
             });
         } else if (event.target.id === 'contact-scroll') {
+			menuToggle.trigger('click');
 			$('html,body').animate({
                 scrollTop: $('.message-input-container').offset().top - navHeight
             });

@@ -1,0 +1,15 @@
+.social-media-container{
+	width: 37%;
+	margin: auto;
+	margin-top: 4em;
+	margin-bottom: 3em;
+	.social-media-icons{
+		@include outer-container;
+		.social-media-item{
+			@include span-columns(4);
+			@include omega(3n);
+			text-align: center;
+			cursor: hand;
+		}
+	}
+}

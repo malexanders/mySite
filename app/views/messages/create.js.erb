@@ -1,5 +1,7 @@
-alert("create.js.erb for messages");
-// <% if @message.errors.any? %>
+// alert("create.js.erb for messages");
+<% if @message.errors.any? %>
+	$('#message-success').html('<%= j render 'messages/message_failure' %>');
+	// $('#message-form').trigger('reset');
 // 	puts "There were errors!"
 //   <% @message.errors.full_messages.each do |message| %>
 //     $('#flash-messages').show();
@@ -41,10 +43,8 @@ alert("create.js.erb for messages");
 //   <% else %>
 // 	$('#message_input_content').css('border', 'none');
 //   <% end  %>
-// <% else %>
+<% else %>
 // 	puts "else!!!"
-	$('#flash-messages').show();
-	$('#flash-messages').html('<%= j render 'refills/flashes' %>');
-	$('#flash-messages').delay(5000).fadeOut(400);
+	$('#message-success').html('<%= j render 'messages/message_success' %>');
 	$('#message-form').trigger('reset');
-// <% end %>
+<% end %>

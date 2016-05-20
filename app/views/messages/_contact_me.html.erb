@@ -1,91 +1,98 @@
-<div class="message-input-container">
+<div class="message-input-outer-container">
 
 
-	<%= form_for @message,
-			  url: {action: 'create', controller: 'messages'},
-			  html: {id: 'message-form', class: "contact-me"},
-			  remote: true do |f| %>
+	<div class="message-input-container">
 
-			  <div class="message-input-title-container">
-				  <h1 class="message-input-title">Contact Me</h1>
-			  </div>
 
-			  <ul class="message-input-list">
-	  			<li class="message-name">
-	  				<span class="message-two-fields">
-						<%= f.text_field :first_name,
-		                                 id: 'message_input_first_name',
+		<%= form_for @message,
+				  url: {action: 'create', controller: 'messages'},
+				  html: {id: 'message-form', class: "contact-me"},
+				  remote: true do |f| %>
+
+				  <div class="message-input-title-container">
+					  <h1 class="message-input-title">Contact Me</h1>
+				  </div>
+
+				  <div id="message-success"></div>
+
+				  <div id="message-failure">
+				  	<%= render 'messages/message_failure' %>
+				  </div>
+
+				  <ul class="message-input-list">
+		  			<li class="message-name">
+		  				<span class="message-two-fields">
+							<%= f.text_field :first_name,
+			                                 id: 'message_input_first_name',
+											 class: 'message-field',
+			                                 placeholder: 'First Name'
+											  %>
+
+						</span>
+		  				<span class="message-two-fields">
+							<%= f.text_field :last_name,
+			                                 id: 'message_input_last_name',
+											 class: 'message-field',
+			                                 placeholder: 'Last Name'
+											 %>
+
+						</span>
+		  			</li>
+		  			<li class="message-email">
+						<%= f.text_field :email,
+										 id: 'message_input_email',
 										 class: 'message-field',
-		                                 placeholder: 'First Name',
-										 required: true %>
+									 	 placeholder: 'Email'
+										 %>
 
-						<!-- <input id="" class="message-field" type="text" name="name" placeholder="First Name"> -->
-					</span>
-	  				<span class="message-two-fields">
-						<%= f.text_field :last_name,
-		                                 id: 'message_input_last_name',
+		  			</li>
+		  			<li class="message-phone">
+						<%= f.text_field :phone,
+										 id: 'message_input_phone',
 										 class: 'message-field',
-		                                 placeholder: 'Last Name',
-										 required: true %>
-						<!-- <input id="" class= "message-field" type="text" name="name" placeholder="Last Name"> -->
-					</span>
-	  			</li>
-	  			<li class="message-email">
-					<%= f.email_field :email,
-									 id: 'message_input_email',
-									 class: 'message-field',
-									 name: 'email',
-									 placeholder: 'Email',
-									 required: true %>
-	  				<!-- <input id="" class="message-field" type="email" name="email" placeholder="Email"> -->
-	  			</li>
-	  			<li class="message-phone">
-					<%= f.text_field :phone,
-									 id: 'message_input_phone',
-									 class: 'message-field',
-									 placeholder: 'Phone',
-									 required: false %>
-	  				<!-- <input id="" class="message-field" type="text" name="phone" placeholder="Phone"> -->
-	  			</li>
-	  			<li class="message-text">
-	  				<!-- <input id="" class="message-field" type="text" name="email" placeholder="Your Message"> -->
-					<%= f.text_area :content,
-									 id: 'message_input_content',
-									 class: 'message-field',
-									 placeholder: 'Your Message',
-									 required: true %>
-	  				<!-- <textarea form="message-input-form" class="message-field" name="message" placeholder="Your Message" rows="8" cols="40"></textarea> -->
-	  			</li>
-	  			<li  class="message-submit">
-	  				<input id="message-submit" type="submit" value="Submit">
-	  			</li>
-	  		</ul>
+										 placeholder: 'Phone'
+										  %>
 
-	<% end %>
+		  			</li>
+		  			<li class="message-text">
+						<%= f.text_area :content,
+										 id: 'message_input_content',
+										 class: 'message-field',
+										 placeholder: 'Your Message'
+										 %>
+		  				<!-- <textarea form="message-input-form" class="message-field" name="message" placeholder="Your Message" rows="8" cols="40"></textarea> -->
+		  			</li>
+		  			<li  class="message-submit">
+		  				<input id="message-submit" type="submit" value="Submit">
+		  			</li>
+		  		</ul>
+
+		<% end %>
 
 
 
-	<!-- <form id="message-input-form" class="contact-me" action="mailto:matthewalexander108@gmail.com" method="post">
-		<div class="message-input-title-container">
-			<h1 class="message-input-title">Contact Me</h1>
-		</div>
-		<ul class="message-input-list">
-			<li class="message-name">
-				<span class="message-two-fields"><input id="" class="message-field" type="text" name="name" placeholder="First Name"></span>
-				<span class="message-two-fields"><input id="" class= "message-field" type="text" name="name" placeholder="Last Name"></span>
-			</li>
-			<li class="message-email">
-				<input id="" class="message-field" type="email" name="email" placeholder="Email">
-			</li>
-			<li class="message-phone">
-				<input id="" class="message-field" type="text" name="phone" placeholder="Phone">
-			</li>
-			<li class="message-text">
-				<textarea form="message-input-form" class="message-field" name="message" placeholder="Your Message" rows="8" cols="40"></textarea>
-			</li>
-			<li  class="message-submit">
-				<input id="contact-submit" type="submit" value="Submit">
-			</li>
-		</ul>
-	</form> -->
+		<!-- <form id="message-input-form" class="contact-me" action="mailto:matthewalexander108@gmail.com" method="post">
+			<div class="message-input-title-container">
+				<h1 class="message-input-title">Contact Me</h1>
+			</div>
+			<ul class="message-input-list">
+				<li class="message-name">
+					<span class="message-two-fields"><input id="" class="message-field" type="text" name="name" placeholder="First Name"></span>
+					<span class="message-two-fields"><input id="" class= "message-field" type="text" name="name" placeholder="Last Name"></span>
+				</li>
+				<li class="message-email">
+					<input id="" class="message-field" type="email" name="email" placeholder="Email">
+				</li>
+				<li class="message-phone">
+					<input id="" class="message-field" type="text" name="phone" placeholder="Phone">
+				</li>
+				<li class="message-text">
+					<textarea form="message-input-form" class="message-field" name="message" placeholder="Your Message" rows="8" cols="40"></textarea>
+				</li>
+				<li  class="message-submit">
+					<input id="contact-submit" type="submit" value="Submit">
+				</li>
+			</ul>
+		</form> -->
+	</div>
 </div>

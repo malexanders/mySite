@@ -35,7 +35,7 @@ module MySite
 	config.action_mailer.smtp_settings = {
 	  address: "smtp.gmail.com",
 	  port: 587,
-	  domain: "localhost:3000",
+	  domain: "gmail.com",
 	  user_name: "matthewalexander108", #Save this as environment variable
 	  password: "catfood9", #Save this as environment variable
 	  authentication: :plain,
@@ -43,7 +43,7 @@ module MySite
 	}
 
 	config.action_mailer.default_url_options = {
-	  host: "localhost:3000"
+	  host: "gmail.com"
 	}
   end
 end

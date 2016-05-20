@@ -1,3 +1,4 @@
+
 @import 'normalize-rails';
 @import "my_mixins";
 @import 'bourbon';
@@ -24,7 +25,8 @@
 @import "refills/flashes";
 @import "logos";
 @import "contact_me";
-
+@import "about_me";
+@import "social_media";
 
 .appWrap {
 	width: 96%;

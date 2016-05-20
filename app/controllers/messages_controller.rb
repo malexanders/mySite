@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
 	  @message = Message.create(message_params)
 	  if @message.save
 		  MessageMailer.new_message(@message).deliver_now
-		  flash.now[:notice] = 'Thank you for your message - I will get back to you shortly!'
+		#   flash.now[:notice] = 'Thank you for your message - I will get back to you shortly!'
 		  respond_to do |format|
 			  format.html{}
 			  format.js{}

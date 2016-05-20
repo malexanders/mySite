@@ -1,0 +1,11 @@
+<% if @message.errors.any? %>
+  <div class="message-failure-container">
+	<h4><%= pluralize(@message.errors.count, "error") %> prohibited this message from being sent:</h4>
+
+	<ul>
+	<% @message.errors.full_messages.each do |msg| %>
+	  <li><%= msg %></li>
+	<% end %>
+	</ul>
+  </div>
+<% end %>
