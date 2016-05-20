@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'messages/new'
-
-  get 'messages/create'
+  # get 'messages/new'
+  #
+  # get 'messages/create'
 
   root 'static_pages#home'
 
@@ -16,6 +16,7 @@ Rails.application.routes.draw do
 	get '/contact' => 'static_pages#contact', as: 'contact'
 
   resources :contacts
+  resources :messages
 
 
   # The priority is based upon order of creation: first created -> highest priority.
