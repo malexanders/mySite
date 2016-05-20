@@ -4,6 +4,7 @@ class MessagesController < ApplicationController
   def create
 	  @message = Message.create(message_params)
 	  if @message.save
+		  MessageMailer.new_message(@message).deliver_now
 		  flash.now[:notice] = 'Thank you for your message - I will get back to you shortly!'
 		  respond_to do |format|
 			  format.html{}
@@ -20,7 +21,7 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-	  params.require(:message).permit(:first_name, :last_name, :email, :phone, :content)
+	  params.require(:message).permit(:first_name, :last_name, :phone, :email, :content)
   end
 
 
