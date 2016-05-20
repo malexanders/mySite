@@ -4,11 +4,11 @@ class ContactsController < ApplicationController
 	def create
 		@contact = Contact.create(contact_params)
 		if @contact.save
-			flash[:notice] = 'Thank you for signing up!'
-			redirect_to root_path
+			flash.now[:notice] = 'Thank you for signing up!'
+			# redirect_to root_path
 			respond_to do |format|
 				format.html {}
-				format.json {}
+				format.js {}
 			end
 		else
 			flash.now[:alert]= @contact.errors.full_messages.to_sentence
