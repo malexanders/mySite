@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'messages/new'
+
+  get 'messages/create'
+
   root 'static_pages#home'
 
 	get '/home' => 'static_pages#home', as: 'home'
