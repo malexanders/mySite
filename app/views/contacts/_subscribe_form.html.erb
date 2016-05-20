@@ -19,7 +19,8 @@
             <%# if @contact.errors[:name].any? %>
                 <%= f.text_field :name,
                                  id: 'subscribe_input_name',
-                                 placeholder: 'FULLNAME' %>
+                                 placeholder: 'FULLNAME',
+								 required: true %>
 
 
 
@@ -34,7 +35,8 @@
                 <%= f.text_field :email,
                                   id: 'subscribe_input_email',
                                   placeholder: 'EMAIl',
-                                  type: 'email' %>
+                                  type: 'email',
+								  required: 'true' %>
 
 
           </li>
