@@ -18,6 +18,10 @@ $(document).on('turbolinks:load', function() {
             $('html,body').animate({
                 scrollTop: $('.parallax-static-content').offset().top
             });
+        } else if (event.target.id === 'contact-scroll') {
+			$('html,body').animate({
+                scrollTop: $('.message-input-container').offset().top - navHeight
+            });
         }
     })
 
