@@ -54,6 +54,9 @@ gem 'normalize-rails', '~> 4.1', '>= 4.1.1'
 #Image hosting
 gem 'cloudinary'
 
+# Environment Variables
+gem 'figaro'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

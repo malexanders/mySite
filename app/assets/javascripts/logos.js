@@ -8,14 +8,14 @@ $(document).on('turbolinks:load', function(){
 
     //$(element).addClass('logos-hide');
 
-    if (screen_width < 765){
-        $(element).css({
-            width: "40%"
-        });
-		$(element_2).css({
-            fontSize: "1.5em"
-        });
-    }
+    // if (screen_width < 765){
+    //     $(element).css({
+    //         width: "40%"
+    //     });
+	// 	$(element_2).css({
+    //         fontSize: "1em"
+    //     });
+    // }
 
     $(window).scroll(function() {
         if( $("#logo" && element).length > 0 ) {
@@ -41,6 +41,7 @@ $(document).on('turbolinks:load', function(){
 	                    $(element_2).finish();
 	                });
 				}
+				element.removeAttr('style');
             }
             else if(elementTopToWindowBottom < 0) {
                 //$(element).removeClass('js-fade-element-show');
