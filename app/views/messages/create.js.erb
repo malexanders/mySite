@@ -1,0 +1,50 @@
+alert("create.js.erb for messages");
+// <% if @message.errors.any? %>
+// 	puts "There were errors!"
+//   <% @message.errors.full_messages.each do |message| %>
+//     $('#flash-messages').show();
+//     $('#flash-messages').html('<%= j render 'refills/flashes' %>');
+//     $('#flash-messages').delay(5000).fadeOut(400);
+//   <% end %>
+//
+//   <% if @message.errors[:last_name].any? %>
+//     $('#message_input_last_name').addClass('errors');
+//     $('#message_input_last_name').css('border', '2px solid red');
+//   <% else %>
+//     $('#message_input_last_name').css('border', 'none');
+//   <% end %>
+//
+//   <% if @message.errors[:first_name].any? %>
+//     $('#message_input_first_name').addClass('errors');
+//     $('#message_input_first_name').css('border', '2px solid red');
+//   <% else %>
+//     $('#message_input_first_name').css('border', 'none');
+//   <% end  %>
+//
+//   <% if @message.errors[:email].any? %>
+// 	$('#message_input_email').addClass('errors');
+// 	$('#message_input_email').css('border', '2px solid red');
+//   <% else %>
+// 	$('#message_input_email').css('border', 'none');
+//   <% end  %>
+//
+//   <% if @message.errors[:phone].any? %>
+// 	$('#message_input_phone').addClass('errors');
+// 	$('#message_input_phone').css('border', '2px solid red');
+//   <% else %>
+// 	$('#message_input_phone').css('border', 'none');
+//   <% end %>
+//
+//   <% if @message.errors[:content].any? %>
+// 	$('#message_input_content').addClass('errors');
+// 	$('#message_input_content').css('border', '2px solid red');
+//   <% else %>
+// 	$('#message_input_content').css('border', 'none');
+//   <% end  %>
+// <% else %>
+// 	puts "else!!!"
+	$('#flash-messages').show();
+	$('#flash-messages').html('<%= j render 'refills/flashes' %>');
+	$('#flash-messages').delay(5000).fadeOut(400);
+	$('#message-form').trigger('reset');
+// <% end %>

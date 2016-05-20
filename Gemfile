@@ -40,6 +40,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Action Mailer
+gem 'actionmailer', '~> 4.2', '>= 4.2.6'
+
 # HTML5/CSS Framework
 gem 'bourbon', '4.2.6'
 gem 'neat', '1.7.4'
