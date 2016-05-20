@@ -31,5 +31,19 @@ module MySite
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+	config.action_mailer.smtp_settings = {
+	  address: "smtp.gmail.com",
+	  port: 587,
+	  domain: "localhost:3000",
+	  user_name: "matthewalexander108", #Save this as environment variable
+	  password: "catfood9", #Save this as environment variable
+	  authentication: :plain,
+	  enable_starttls_auto: true
+	}
+
+	config.action_mailer.default_url_options = {
+	  host: "localhost:3000"
+	}
   end
 end
