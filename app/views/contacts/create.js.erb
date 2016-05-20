@@ -17,6 +17,10 @@
     $('#subscribe_input_email').css('border', '2px solid red');
   <% else %>
     $('#subscribe_input_email').css('border', 'none');
-  <% end  %>
-
+  <% end %>
+<% else %>
+	$('#flash-messages').show();
+	$('#flash-messages').html('<%= j render 'refills/flashes' %>');
+	$('#flash-messages').delay(5000).fadeOut(400);
+	$('#subscribe-form').trigger('reset');
 <% end %>
