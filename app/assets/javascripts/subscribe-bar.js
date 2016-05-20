@@ -7,12 +7,11 @@ $(document).on('turbolinks:load', function(){
 	//	}
 	//})
 
-    $('#subscribe-form').validate({
-        rules: {
-            subscribe_input_name: {
-                maxlength: 20
-            }
-        }
-    });
+    // $('#subscribe-form').validate({
+    //     rules: {
+    //         subscribe_input_name: {
+    //             maxlength: 20
+    //         }
+    //     }
+    // });
 });
-
