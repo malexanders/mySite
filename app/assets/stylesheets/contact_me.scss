@@ -1,0 +1,33 @@
+.message-input-container{
+	width: 61.8%;
+	margin: auto;
+
+	.message-input-title-container{
+		text-align: center;
+		.message-input-title{
+			font-family: "Titillium Web", sans-serif;
+			font-size: 2.4em;
+		}
+	}
+
+	.message-input-list{
+		@include outer-container;
+		.message-field{
+			border: 1px solid black;
+		}
+		.message-name{
+			@include span-columns(12);
+			// li span{
+			// }
+			.message-two-fields{
+				@include span-columns(6 of 12);
+				@include omega(2n);
+			}
+		}
+		.message-submit{
+			width: 40%;
+			margin:auto;
+			margin-top: 2em;
+		}
+	}
+}
