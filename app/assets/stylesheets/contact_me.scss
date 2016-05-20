@@ -1,6 +1,26 @@
 .message-input-container{
 	width: 61.8%;
 	margin: auto;
+	margin-top: 3em;
+
+	.message-success-container {
+	    text-align: center;
+		background-color: lightgreen;
+		margin-bottom: 1.8%;
+
+		p{
+			margin: 0;
+			line-height: 40px;
+		}
+	}
+	.message-failure-container{
+		background-color: tomato;
+		margin-bottom: 1em;
+		padding: 1em;
+		ul{
+			list-style-position: inside;
+		}
+	}
 
 	.message-input-title-container{
 		text-align: center;
@@ -23,6 +43,9 @@
 				@include span-columns(6 of 12);
 				@include omega(2n);
 			}
+		}
+		#message_input_content{
+			height: 120px;
 		}
 		.message-submit{
 			width: 40%;
