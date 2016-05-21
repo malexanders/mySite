@@ -43,7 +43,7 @@ module MySite
 	}
 
 	config.action_mailer.default_url_options = {
-	  host: "gmail.com"
+	  host: "smtp.gmail.com"
 	}
   end
 end
