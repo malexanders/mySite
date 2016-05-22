@@ -1,7 +1,7 @@
 $(document).on('turbolinks:load', function(){
     var element = document.getElementsByClassName("logo-image");
     var element_2 = document.getElementsByClassName("logo-text");
-    var screen_width = $(window).width();
+
 	var a_count = 0;
 
 	MyGlobal.animate_count = 0;
@@ -17,7 +17,9 @@ $(document).on('turbolinks:load', function(){
     //     });
     // }
 
-    $(window).scroll(function() {
+    // $(window).scroll(function() {
+	$(window).on('scroll', function(){
+
         if( $("#logo" && element).length > 0 ) {
             var elementTopToPageTop = $(element).offset().top;
             var windowTopToPageTop = $(window).scrollTop();
@@ -25,6 +27,7 @@ $(document).on('turbolinks:load', function(){
             var elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop;
             var elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop;
             var distanceFromBottomToAppear = 300;
+			var screen_width = $(window).width();
 
             if(elementTopToWindowBottom > distanceFromBottomToAppear && screen_width > 765) {
 
@@ -41,15 +44,12 @@ $(document).on('turbolinks:load', function(){
 	                    $(element_2).finish();
 	                });
 				}
-				element.removeAttr('style');
+
             }
             else if(elementTopToWindowBottom < 0) {
                 //$(element).removeClass('js-fade-element-show');
                 //$(element).addClass('js-fade-element-hide');
             }
-
-
-
         }
     });
 
