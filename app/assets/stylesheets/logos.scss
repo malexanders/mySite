@@ -17,21 +17,23 @@
       @include omega(3n);
       margin-bottom: 2.5em;
       img{
-        width: 0%;
-        &:hover{
-          postion:relative;
-          bottom: 20px;
-        }
+			width: 40%;
+	  	@include media($ipad){
+			width: 0%;
+		}
       }
 
       .logo-text{
-        font-size: 1em;
+		  font-size: 1em;
+		  @include media($ipad){
+			  font-size: 0em;
+		  }
       }
 
       h2 {
 		font-family: "Titillium Web", sans-serif;
       	font-weight: 600;
-        
+
         font-size: 1em;
         @include media($ipad){
           font-size: 0em;
