@@ -1,5 +1,6 @@
 // alert("create.js.erb for messages");
 <% if @message.errors.any? %>
+	$('#message-success').show();
 	$('#message-success').html('<%= j render 'messages/message_failure' %>');
 	// $('#message-form').trigger('reset');
 // 	puts "There were errors!"
@@ -45,6 +46,8 @@
 //   <% end  %>
 <% else %>
 // 	puts "else!!!"
+	$('#message-success').show();
 	$('#message-success').html('<%= j render 'messages/message_success' %>');
+	$('#message-success').delay(5000).fadeOut(400);
 	$('#message-form').trigger('reset');
 <% end %>
